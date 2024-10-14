@@ -34,7 +34,9 @@ def square_num(a):
 
 # Function to calculate the square root of a number
 # input: float or int or list/array of ints/floats
-
+def square_root(a):
+    square_root_num   = a ** 0.5
+    return square_root_num
 
 
 # Function to calculate hypotenuse using all of the above

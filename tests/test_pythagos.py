@@ -44,5 +44,19 @@ def test_square_num():
 
     # Assert
     assert output == expected_output    
+    
+
+def test_square_root():
+    '''Test for the square root function'''
+
+# Arrange
+    test_number_1 = 25
+    expected_output =4
+    
+    # Act
+    output = hypotenuse.pythagos.square_root(test_number_1)
+
+    # Assert
+    assert output == expected_output 
 
 # No cleanup needed
