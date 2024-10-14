@@ -18,6 +18,17 @@ def add_nums(a,b):
 
 # Function to calculate the square of a number
 # input: float or int or list/array of ints/floats
+def square_num(a):
+    """square a number
+
+    Args:
+        a (int/float/array): Number(s) to be squared
+
+    Returns:
+        float, int, array:squared number
+    """
+    squared = a**2
+    return squared
 
 
 

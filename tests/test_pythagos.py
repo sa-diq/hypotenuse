@@ -30,4 +30,19 @@ def test_add_arrays():
 
 # Assert
     assert np.allclose(expected_output, output)
+    
+    
+def test_square_num():
+    '''Test function that square a number'''
+
+# Arrange
+    test_number_a = 9
+    expected_output =81
+    
+    # Act
+    output = hypotenuse.pythagos.square_num(test_number_a)
+
+    # Assert
+    assert output == expected_output    
+
 # No cleanup needed
