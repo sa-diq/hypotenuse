@@ -18,12 +18,25 @@ def add_nums(a,b):
 
 # Function to calculate the square of a number
 # input: float or int or list/array of ints/floats
+def square_num(a):
+    """square a number
+
+    Args:
+        a (int/float/array): Number(s) to be squared
+
+    Returns:
+        float, int, array:squared number
+    """
+    squared = a**2
+    return squared
 
 
 
 # Function to calculate the square root of a number
 # input: float or int or list/array of ints/floats
-
+def square_root(a):
+    square_root_num   = a ** 0.5
+    return square_root_num
 
 
 # Function to calculate hypotenuse using all of the above
