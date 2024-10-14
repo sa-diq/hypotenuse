@@ -43,3 +43,17 @@ def square_root(a):
 # formula: a^2 = b^2 + c^2
 # c = sqrt(a^2 +b^2)
 # input: float or int or list/array of ints/floats
+
+
+def calc_hypot(opposite, adjacent):
+    """Calculate hypotenuse
+
+    Args:
+        opposite (int, float, array): _description_
+        adjacent (int, float, array): _description_
+    """
+    opp_squared = square_num(opposite)
+    adj_squared = square_num(adjacent)
+    nums_add = add_nums(adj_squared, opp_squared)
+    hypot = square_root(nums_add)
+    return hypot

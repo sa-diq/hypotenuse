@@ -51,12 +51,30 @@ def test_square_root():
 
 # Arrange
     test_number_1 = 25
-    expected_output =4
+    expected_output =5
     
     # Act
     output = hypotenuse.pythagos.square_root(test_number_1)
 
     # Assert
     assert output == expected_output 
+    
+    
+def test_calc_hypot():
+    '''Test for the square root function'''
+
+# Arrange
+    test_number_1 = np.array([34, 67, 23])
+    test_number_2 = np.array([22, 8, 32])
+    expected_output = np.array([40.49,  67.4759, 39.4081])
+    
+    # Act
+    output = hypotenuse.pythagos.calc_hypot(test_number_1, test_number_2)
+    
+
+    # Assert
+    assert np.allclose(expected_output, output, rtol=1e-1)
+
+
 
 # No cleanup needed
